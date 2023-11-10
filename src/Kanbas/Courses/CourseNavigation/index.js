@@ -14,7 +14,7 @@ function CourseNavigation() {
     const { pathname } = useLocation();
   
     return (
-      <td valign="middle">
+      <td valign="middle" style={{paddingRight: '70em'}}>
         <ul style={{ padding: '0', marginLeft: '25px' }}>
           {links.map((link, index) => (
             <li key={index}>
