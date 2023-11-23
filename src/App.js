@@ -4,6 +4,7 @@ import HelloWorld from "./Labs/a3/Helloworld";
 import Kanbas from "./Kanbas";
 import {HashRouter} from "react-router-dom";
 import {Routes, Route, Navigate} from "react-router";
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
    return (
     <HashRouter>

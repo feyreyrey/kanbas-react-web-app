@@ -1,6 +1,6 @@
-import courses from "./courses.json";
-import modules from "./modules.json";
-import assignments from "./assignments.json";
+import courses from "./courses";
+import modules from "./modules";
+import assignments from "./assignments";
 export default {
   courses,
   modules,
