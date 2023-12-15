@@ -9,7 +9,7 @@ function WorkingWithObjects() {
         completed: false,
         score: 0,
       });
-      const URL = "http://localhost:4000/a5/assignment"
+      const URL = "https://kanbas-node-server-appl-540a1d6b557b.herokuapp.com/a5/assignment"
       const fetchAssignment = async () => {
         const response = await axios.get(`${URL}`);
         setAssignment(response.data);

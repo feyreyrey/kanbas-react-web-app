@@ -89,9 +89,7 @@ function WorkingWithArrays() {
       <button onClick={postTodo} >
         Post Todo
       </button>
-      <button onClick={updateTodo}>
-        Update Todo
-      </button>
+      
       <button onClick={createTodo}
               className="btn btn-primary mb-2 w-100">
         Create Todo

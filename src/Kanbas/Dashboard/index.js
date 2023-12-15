@@ -18,21 +18,21 @@ function Dashboard({ courses, course, setCourse, addCourse,
              onChange={(e) => setCourse({ ...course, endDate: e.target.value }) } />
         <h4>Published Courses({courses.length})</h4>
         <button className="btn btn-success" onClick={addCourse}>Add Course</button>
-        <button className="btn btn-secondary" onClick={updateCourse} >
+        <button className="btn btn-secondary" onClick={() => updateCourse(course)} >
         Update
       </button>
         <div className="text-center">
           <div className="row">
             {courses.map((course) => (
-              <div key={course._id.$oid} className="col-4" style={{paddingTop: '1.5%'}}>
+              <div key={course._id} className="col-4" style={{paddingTop: '1.5%'}}>
                 <div className="card" style={{width: '18rem'}}>
                   <img className="card-img-top" src="https://www.staradvertiser.com/wp-content/uploads/2021/08/web1_Starship-gap2.jpg" alt="Card image cap" />
                   <div className="card-body">
                     <h5 className="card-title">{course.name}</h5>
                     <p className="card-text">{course.number} - Starts on: {course.startDate}</p>
-                    <Link to={`/Kanbas/Courses/${course._id.$oid}`} className="btn btn-danger">Go to {course.name}</Link><br/>
+                    <Link to={`/Kanbas/Courses/${course._id}`} className="btn btn-danger">Go to {course.name}</Link><br/>
                     <div style={{paddingTop: '3.5%'}}>
-                    <button onClick={() => deleteCourse(course._id.$oid)} className="btn btn-danger" style={{ marginLeft: '10px' , paddingTop: '1.5%'}}>Delete</button>
+                    <button onClick={() => deleteCourse(course)} className="btn btn-danger" style={{ marginLeft: '10px' , paddingTop: '1.5%'}}>Delete</button>
                     <button onClick={(event) => {event.preventDefault();setCourse(course);}}  className= "btn btn-dark">Edit</button>
                     </div>
                   </div>
