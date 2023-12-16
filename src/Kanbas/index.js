@@ -4,6 +4,7 @@ import KanbasNavigation from "./KanbasNavigation";
 import { Routes, Route, Navigate } from "react-router-dom";
 import Dashboard from "./Dashboard";
 import Courses from "./Courses";
+import Login from "./users/signin";
 import store from "./store";
 import { Provider } from "react-redux";
 import axios from "axios";
@@ -65,6 +66,7 @@ function Kanbas() {
               deleteCourse={deleteCourse}
               updateCourse={updateCourse}/>} />
           <Route path="Courses/:courseId/*" element={<Courses courses={courses}/>} />
+          
         </Routes>
       </div>
       </div>

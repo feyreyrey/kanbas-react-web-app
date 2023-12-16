@@ -38,3 +38,17 @@ export const deleteUser = async (id) => {
     const response = await axios.delete(`${USERS_API}/${id}`);
     return response.data;
 }
+
+export const createUser = async (user) => {
+    const response = await axios.post(`${USERS_API}`, user);
+    return response.data;
+  };
+
+  export const signout = async () => {
+    const response = await axios.post(`${USERS_API}/signout`);
+    return response.data;
+  };
+  
+  
+
+  

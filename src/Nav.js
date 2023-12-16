@@ -15,6 +15,12 @@ function Nav() {
        Hello</Link>
      <Link className="nav-link" to="/Kanbas">
        Kanbas</Link>
+       <Link className="nav-link" to="/login">
+       login</Link>
+       <Link className="nav-link" to="/account">
+       account</Link>
+       <Link className="nav-link" to="/account">
+       account</Link>
    </nav>
  );
 }
